@@ -1,5 +1,7 @@
 {
-  "scripts": {
-    "start": "node app.js"
-  }
+  "name": "Ci Example using AWS Apprunner.",
+  "version": "1.0",
+  "description": "Example app for purpose of the AWS App Runner",
+  "main": "index.js",
+
 }
