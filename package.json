@@ -1,7 +1,6 @@
 {
-  "name": "Ci Example using AWS Apprunner.",
+  "name": "ci-example",
   "version": "1.0",
   "description": "Example app for purpose of the AWS App Runner",
-  "main": "index.js",
-
+  "main": "app.js"
 }
