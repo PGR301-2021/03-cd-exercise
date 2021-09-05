@@ -7,7 +7,7 @@ const server = http.createServer((req, res) => {
    res.setHeader('Content-Type', 'application/json');
    var user = {
      first_name: "John",
-     last_name: "Smith",
+     last_name: "Smith the II",
      age: "38",
      department: "Software"
      };
