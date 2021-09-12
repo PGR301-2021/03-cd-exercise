@@ -2,8 +2,9 @@ resource "aws_iam_user" "user" {
   name = var.student_id
 }
 
-resource "aws_iam_access_key" "user" {
-  user = aws_iam_user.user.name
+resource "aws_iam_access_key" "lb" {
+  user    = aws_iam_user.lb.name
+  pgp_key = "keybase:${var.student_keybase}"
 }
 
 data "aws_iam_policy_document" "instance-assume-role-policy" {
@@ -15,6 +16,11 @@ data "aws_iam_policy_document" "instance-assume-role-policy" {
       identifiers = ["ec2.amazonaws.com"]
     }
   }
+}
+
+resource "openpgp_key" "my-openpgp-key" {
+  name  = "Your name"
+  email = "you@example.com"
 }
 
 resource "aws_iam_role" "instance_profile" {
