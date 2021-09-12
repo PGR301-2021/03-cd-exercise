@@ -2,7 +2,7 @@ resource "aws_iam_user" "user" {
   name = var.student_id
 }
 
-resource "aws_iam_access_key" "lb" {
+resource "aws_iam_access_key" "user" {
   user    = aws_iam_user.user.name
   pgp_key = "keybase:${var.student_keybase}"
 }

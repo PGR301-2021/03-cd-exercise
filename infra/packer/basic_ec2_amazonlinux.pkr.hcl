@@ -13,6 +13,10 @@ build {
     "source.amazon-ebs.student-computer"
   ]
 
+  provisioner "shell" {
+    script = "infra/packer/server_setup.sh"
+  }
+
   provisioner "file" {
     source = "infra/packer/boto3_example.py"
     destination = "/home/ec2-user/boto3_example.py"
