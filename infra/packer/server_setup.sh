@@ -15,7 +15,5 @@ sudo apt install -y whois
 sudo systemctl enable xrdp
 sudo systemctl status xrdp
 
-
-
 sudo adduser student --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password
 echo "student:s3creeT!" | sudo chpasswd
