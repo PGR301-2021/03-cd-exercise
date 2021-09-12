@@ -4,6 +4,8 @@ name: Packer
 
 on:
   push:
+    paths:
+    - 'packer/**'
 
 jobs:
   packer:
