@@ -18,11 +18,6 @@ data "aws_iam_policy_document" "instance-assume-role-policy" {
   }
 }
 
-resource "openpgp_key" "my-openpgp-key" {
-  name  = "Your name"
-  email = "you@example.com"
-}
-
 resource "aws_iam_role" "instance_profile" {
   name               = "${var.student_id}-ssm-role"
   managed_policy_arns = ["arn:aws:iam::aws:policy/AmazonSSMFullAccess"]
