@@ -8,11 +8,11 @@ source "amazon-ebs" "student-computer" {
 
 build {
   sources = [
-    "source.amazon-ebs.basic-example"
+    "source.amazon-ebs.student-computer"
   ]
 
   provisioner "file" {
-    source = "packer/boto3_example.py"
+    source = "infra/packer/boto3_example.py"
     destination = "/home/ec2-user/boto3_example.py"
   }
 }
