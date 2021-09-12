@@ -3,10 +3,10 @@ data "aws_vpc" "main" {
 }
 
 resource "aws_instance" "server" {
-  ami = var.ami
-  instance_type = var.instance_type
+  ami                    = var.ami
+  instance_type          = var.instance_type
   vpc_security_group_ids = [aws_security_group.ssm.id]
-  iam_instance_profile = aws_iam_instance_profile.ssm_profile.name
+  iam_instance_profile   = aws_iam_instance_profile.ssm_profile.name
   tags = {
     Name = var.student_id
   }

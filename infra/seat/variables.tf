@@ -1,5 +1,5 @@
 variable "instance_type" {
-  type = string
+  type    = string
   default = "t3.medium"
 }
 
@@ -13,6 +13,6 @@ variable "student_id" {
 
 
 variable "student_keybase" {
-  type = string
+  type        = string
   description = "The Keybase user of the student"
 }
