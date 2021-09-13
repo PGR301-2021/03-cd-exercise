@@ -59,8 +59,29 @@ jobs:
 ```
 
 Dette er et eksempel på hvordan man konfigurer en veldig enkel sjekk for et Javascriptprosjekt ved hjelp av GitHub Actions.
+Denne Workflowen har følgende egenskaper; 
+
+- Kjører på hver push mot Githib 
+- Kjører flere bygg (Matrix) sjekker koden både mot Node JS v12 og 14
+- Sjekker ut koden
+- Kjører ````npm ci```` og ```npm test```
+
 Vi skal senere se på bygg & deployment av Java/Spring Boot applikasjoner på samme måte.
-  
+ 
+ 
+## Konfigurer Branch protection på repoet
+
+- Gå til Settings/Branches og Se etter seksjonen "Branch Protection Rules". 
+- Velg Add
+- Velg Main Som branch 
+
+- Legg til "Require status checks to pass before merging", og velg alle node JS byggene.
+
+Det betyr at alle nodeJS versjonene må bygge applikasjonen for at vi skal få lov til å merge
+koden mot main
+
+
+ <img title="a title" alt="Alt text" src="img/10.png">
 
 ## Gå til tjenestep App Runner 
 
