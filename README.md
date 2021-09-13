@@ -87,6 +87,8 @@ Du bør nå sjekke inn litt kode som brekker tester med vilje, for å sjekke at 
 
 ## Gå til tjenestep App Runner 
 
+Vi skal nå sette opp kontinuerlig deployment av dette repoet ved hjelp av PAAS tjenesten AWS Apprunner.
+
 - Logg på AWS miljøet ved hjelp av instruksjoner gitt i klasserommet eller på Canvas
 - Gå til tjenesten "AWS App runner". Pass på at du har "irland" valgt som region. 
 - Velg "Create Service"
