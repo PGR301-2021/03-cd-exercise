@@ -7,6 +7,6 @@ build:
     - npm ci
 
 run:
-  command: npm run start
+  command: node app.js
   network:
     port: 3000
