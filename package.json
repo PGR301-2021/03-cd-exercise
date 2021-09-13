@@ -3,7 +3,8 @@
   "version": "1.0",
   "description": "Example app for purpose of the AWS App Runner",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test" : "jest"
   },
   "dependencies": {
     "jest": "^27.1.1"

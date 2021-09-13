@@ -12,7 +12,7 @@ Istedet for Travis-ci.com skal vi bruke GitHub actions for å kontrollere kode
 
 ## Leg et nytt repository
 
-Med din egen GitHub bruker, lag et nytt repository. Leg en klone av dette repositoryet, og kopier filene. Du trenger bare filene in "source" katalogen. 
+Med din egen GitHub bruker, lag et nytt repository. Leg en klone av dette repositoryet, og kopier filene. Du trenger bare filene in "rot" katalogen. 
 
 ## Test applikasjonen
 
@@ -20,7 +20,7 @@ I dette repositoryet er det en liten Javascript/Node applikasjon som ikke gjør 
 JSON objekt i HTTP Response. 
 
 Gå til katalogen med kildekode og skriv  ````npm start````
-Deretter kan du teste applikasjonen på <http://localhost:8000/>
+Deretter kan du teste applikasjonen på <http://localhost:3000/>
 I nettleseren din skal du se en respons 
 
 Hvis du ser i ````payload.js```` og ```payload.test.js``` vil du se at det finnes en veldig enkel unit test basert 
@@ -61,9 +61,9 @@ jobs:
 Dette er et eksempel på hvordan man konfigurer en veldig enkel sjekk for et Javascriptprosjekt ved hjelp av GitHub Actions.
 Denne Workflowen har følgende egenskaper; 
 
-- Kjører på hver push mot Githib 
-- Kjører flere bygg (Matrix) sjekker koden både mot Node JS v12 og 14
+- Kjører på hver push mot Github 
 - Sjekker ut koden
+- Kjører flere bygg (Matrix) sjekker koden både mot Node JS v12 og 14
 - Kjører ````npm ci```` og ```npm test```
 
 Vi skal senere se på bygg & deployment av Java/Spring Boot applikasjoner på samme måte.
@@ -82,6 +82,8 @@ koden mot main
 
 
  <img title="a title" alt="Alt text" src="img/10.png">
+
+Du bør nå sjekke inn litt kode som brekker tester med vilje, for å sjekke at Branch protection fungerer som planlagt. 
 
 ## Gå til tjenestep App Runner 
 
