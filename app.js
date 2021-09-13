@@ -1,18 +1,12 @@
 const http = require('http');
+const payload = require('./payload');
 
 const port = 8000;
 
 const server = http.createServer((req, res) => {
    res.statusCode = 200;
    res.setHeader('Content-Type', 'application/json');
-
-   var user = {
-     first_name: "John",
-     last_name: "Smith the II",
-     age: "38",
-     department: "Software"
-     };
-   res.end(JSON.stringify(user));
+   res.end(JSON.stringify(payload("Glenn", "Bech", 44, "DevOps")));
  });
 
  server.listen(port,  () => {
