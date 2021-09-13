@@ -70,8 +70,7 @@ Vi skal senere se på bygg & deployment av Java/Spring Boot applikasjoner på sa
 
 <img title="a title" alt="Alt text" src="img/1.png">
 
-
-- Velg Source code repository
+- Velg Source code repository, og klikk "Add New" under "Connect to GitHub"
 
 <img title="a title" alt="Alt text" src="img/2.png">
 
@@ -81,6 +80,7 @@ Vi skal senere se på bygg & deployment av Java/Spring Boot applikasjoner på sa
 En "GitHub Connection" gir AWS tilgang til å lese kildekode fra din GitHub bruker. En AWS app installeres også 
 i din GitHub konto. 
 
+- Velg "Install Another"
 
 <img title="a title" alt="Alt text" src="img/3.png">
 <img title="a title" alt="Alt text" src="img/4.png">
@@ -89,31 +89,28 @@ i din GitHub konto.
 
 <img title="a title" alt="Alt text" src="img/5.png">
 
-- Nå er alt klart 
+- Nå er alt klart, velg Next 
 
 <img title="a title" alt="Alt text" src="img/6.png">
 
-Velg next
-
-
 ## Konfigurasjon av app
 
-- Velg repoet du har laget for denne øvelsen, main branch, og "automatic deployment"
+- Velg GitHub Connection du nettopp laget, og repoet du har laget for denne øvelsen, main branch, og "automatic deployment"
 
 <img title="a title" alt="Alt text" src="img/7.png">
 
-Velg Next
+- Velg Next
 
 - Velg "configure all settings here" og bruk verdier som vist 
 
 <img title="a title" alt="Alt text" src="img/8.png">
 
-Velg next
+- Velg next
 
-- Review
+## Review
 
 Se over verdier og scroll nederst til "Create service"
-  
+ 
 
 ## Sjekke at tjenesten er deployet. 
 
