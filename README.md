@@ -1,19 +1,39 @@
-# Kontinuerlig integrasjon
+# Kontinuerlig integrasjon og deployment med AWS Apprunner pg GitHub actions
 
-I denne oppgaven får dere en introduksjon til tjenesten AWS Apprunner og skal få trene på kontinuerlig integrasjon. Dette 
-er en gruppeoppgave og dere skal jobbe sammen i grupper på fire personer.
-
-Formålet med oppgaven er å løse en programmeringsoppgave der dere må jobbe på samme kodebase, og samarbeide ved hjelp av en arbeidsflyt 
-som baserer seg på feature branch, peer review (pull request), og en delt main branch som automatisk deployes til et miljø i AWS. 
-
-Siden utviklere i dag må forholde seg til mange ulike språk er denne oppgaven laget i Node.js 12 
-
-## Steg 1 Lag en fork av dette repository i deres 
+I denne oppgaven får dere en introduksjon til tjenesten AWS Apprunner og skal få trene på kontinuerlig integrasjon og deployment.
+Istedet for Travis-ci.com skal vi bruke GitHub actions for å kontrollere kode
 
 
-## Lag en fork av dette repository i deres 
+## Før du begynner
 
-Logg på AWS miljøet med egen bruker 
+- Du trenger NPM installer på din maskin
+- Windows <https://nodejs.org/en/download/>
+- OSX   ```brew install node```
+
+## Leg et nytt repository
+
+Med din egen GitHub bruker, lag et nytt repository. Leg en klone av dette repositoryet, og kopier filene. Du trenger bare filene in "source" katalogen. 
+
+## Test applikasjonen
+
+I dette repositoryet er det en liten Javascript/Node applikasjon som ikke gjør noe annet enn å returnere et enkelt 
+JSON objekt i HTTP Response. 
+
+Gå til katalogen med kildekode og skriv  ````npm start````
+Deretter kan du teste applikasjonen på <http://localhost:8000/>
+I nettleseren din skal du se en respons 
+```json
+{
+   "first_name": "John",
+   "last_name": "Smith the II",
+   "age": "38",
+   "department": "Software"
+}
+```
+
+
+## Kontinuerlig integrasjon med GitHub Actions
+ 
 
 ## Gå til tjenestep App Runner 
 
