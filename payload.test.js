@@ -5,5 +5,5 @@ test("Creates at least age correctly in payload", () => {
 });
 
 test("Creates at least age correctly in payload", () => {
-    expect(payload("glenn", "Bech", 45, "DevOps").age).toBe(90);
+    expect(payload("glenn", "Bech", 45, "DevOps").age).toBe(45);
 });
