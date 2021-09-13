@@ -71,16 +71,59 @@ Vi skal senere se på bygg & deployment av Java/Spring Boot applikasjoner på sa
 <img title="a title" alt="Alt text" src="img/1.png">
 
 
+- Velg Source code repository
+
+<img title="a title" alt="Alt text" src="img/2.png">
 
 
 ## Connect med github 
 
-## Lag en ny tjeneste 
+En "GitHub Connection" gir AWS tilgang til å lese kildekode fra din GitHub bruker. En AWS app installeres også 
+i din GitHub konto. 
+
+
+<img title="a title" alt="Alt text" src="img/3.png">
+<img title="a title" alt="Alt text" src="img/4.png">
+
+- Ta stilling til om du vil gi AWS Appen tilgang til alt du har i ditt repo, eller om du vil gi tilgang på en "Per repo basis"
+
+<img title="a title" alt="Alt text" src="img/5.png">
+
+- Nå er alt klart 
+
+<img title="a title" alt="Alt text" src="img/6.png">
+
+Velg next
+
+
+## Konfigurasjon av app
+
+- Velg repoet du har laget for denne øvelsen, main branch, og "automatic deployment"
+
+<img title="a title" alt="Alt text" src="img/7.png">
+
+Velg Next
+
+- Velg "configure all settings here" og bruk verdier som vist 
+
+<img title="a title" alt="Alt text" src="img/8.png">
+
+Velg next
+
+- Review
+
+Se over verdier og scroll nederst til "Create service"
+  
 
 ## Sjekke at tjenesten er deployet. 
 
+Se i AWS Consolet til tjenesten, finn URL og sjekk i nettlser
+
 ## Utvid applikasjonen 
 
+Lek med applikasjonen og gjør minst følgende; 
 
-
-
+- Endre payload, se at en ny versjon bli automatisk deployet 
+- Legg til Bran Protection på repositoriet som vi gjorde i forrige øving. Bygget som GitHub Actions lager heter "build" - det er det du må søke etter 
+i "Status Checks" dialogen under Branch protection. 
+- Lag en ny branch i eget repo, endre en test for å provosere frem en feil, lag en PR og se at du ikke får sjekket den inn.
