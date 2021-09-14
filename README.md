@@ -19,7 +19,7 @@ Med din egen GitHub bruker, lag et nytt repository. Leg en klone av dette reposi
 I dette repositoryet er det en liten Javascript/Node applikasjon som ikke gjør noe annet enn å returnere et enkelt 
 JSON objekt i HTTP Response. 
 
-Gå til katalogen med kildekode og skriv  ````npm start````
+Gå til katalogen med kildekode og skriv  ````npm install```` og ````npm start````
 Deretter kan du teste applikasjonen på <http://localhost:3000/>
 I nettleseren din skal du se en respons 
 
