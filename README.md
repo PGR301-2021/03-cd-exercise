@@ -126,7 +126,7 @@ i din GitHub konto.
 
 - Velg Next
 
-- Velg "configure all settings here" og bruk verdier som vist 
+- Velg "use a configuration file". Husk at du har en apprunner.yaml i repositoriet ditt. 
 
 <img title="a title" alt="Alt text" src="img/8.png">
 
